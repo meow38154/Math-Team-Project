@@ -4,32 +4,23 @@ using UnityEngine.InputSystem;
 
 namespace Player
 {
-    public class PlayerRaySensor : MonoBehaviour
+    public class PlayerRaySensor : AbstractPlayerRay
     {
-        [SerializeField] private LayerMask rayMask;
-        private void Update()
+        protected override void RayInteraction(Transform target)
         {
-            if (Physics.Raycast(transform.parent.position, transform.parent.forward * 10, out RaycastHit hit, 100, rayMask))
-            {
-                Debug.Log(hit.transform.name);
-                if (Mouse.current.leftButton.wasPressedThisFrame)
-                {
-                    StartCoroutine(DoorOpenClose(hit.transform));
-                }
-            }
-        }
-
-        private void OnDrawGizmos()
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawRay(transform.parent.position, transform.parent.forward * 10);
+            StartCoroutine(DoorOpenClose(target));
         }
 
         private IEnumerator DoorOpenClose(Transform target)
         {
-            target.transform.rotation = Quaternion.Euler(0, 90, 0);
+            Quaternion closedRot = target.localRotation;
+            Quaternion openRot = Quaternion.Euler(0f, 90f, 0f);
+
+            target.localRotation = openRot;
+
             yield return new WaitForSeconds(4f);
-            target.transform.rotation = Quaternion.Euler(0, 0, 0);
+
+            target.localRotation = closedRot;
         }
     }
 }

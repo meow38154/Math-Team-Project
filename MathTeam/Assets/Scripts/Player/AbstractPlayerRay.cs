@@ -13,7 +13,6 @@ namespace Player
             Ray ray = new Ray(transform.position, transform.forward);
 
             if (!Physics.Raycast(ray, out RaycastHit hit, rayDistance, rayMask)) return;
-            Debug.Log(hit.transform.name);
 
             if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
             {

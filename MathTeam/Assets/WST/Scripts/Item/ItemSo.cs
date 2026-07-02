@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace WST.Scripts.Item.ItemUI
+namespace WST.Scripts.Item
 {
     [CreateAssetMenu(fileName = "Item", menuName = "SO/Item", order = 0)]
     public class ItemSo : ScriptableObject

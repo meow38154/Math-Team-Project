@@ -6,7 +6,7 @@ namespace WST.Scripts.Item.ItemUI
 {
     public class ItemContainer : MonoBehaviour
     {
-        private List<ItemSlotUI> _itemSlots;
+        [SerializeField] private List<ItemSlotUI> itemSlots;
 
 
         private void Awake()
@@ -16,8 +16,7 @@ namespace WST.Scripts.Item.ItemUI
 
         private void Init()
         {
-            _itemSlots = GetComponentsInChildren<ItemSlotUI>().ToList();
-            foreach (ItemSlotUI slot in _itemSlots)
+            foreach (ItemSlotUI slot in itemSlots)
             {
                 slot.Init();
             }

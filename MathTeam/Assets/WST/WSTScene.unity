@@ -551,6 +551,7 @@ GameObject:
   - component: {fileID: 201320058}
   - component: {fileID: 201320057}
   - component: {fileID: 201320056}
+  - component: {fileID: 201320059}
   m_Layer: 5
   m_Name: Image (2)
   m_TagString: Untagged
@@ -636,6 +637,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201320054}
   m_CullTransparentMesh: 1
+--- !u!114 &201320059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201320054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4440b7df1e814e0bbe03280abd273718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WST.Scripts.Item.ItemUI.ItemSlotUI
 --- !u!1001 &202974233
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2682,6 +2695,7 @@ GameObject:
   - component: {fileID: 904074244}
   - component: {fileID: 904074243}
   - component: {fileID: 904074242}
+  - component: {fileID: 904074245}
   m_Layer: 5
   m_Name: Image (3)
   m_TagString: Untagged
@@ -2767,6 +2781,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 904074240}
   m_CullTransparentMesh: 1
+--- !u!114 &904074245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904074240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4440b7df1e814e0bbe03280abd273718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WST.Scripts.Item.ItemUI.ItemSlotUI
 --- !u!1001 &1007964577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3734,6 +3760,7 @@ GameObject:
   - component: {fileID: 1268504189}
   - component: {fileID: 1268504188}
   - component: {fileID: 1268504187}
+  - component: {fileID: 1268504190}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -3819,6 +3846,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268504185}
   m_CullTransparentMesh: 1
+--- !u!114 &1268504190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268504185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4440b7df1e814e0bbe03280abd273718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WST.Scripts.Item.ItemUI.ItemSlotUI
 --- !u!1001 &1268608398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3979,6 +4018,7 @@ GameObject:
   - component: {fileID: 1338669704}
   - component: {fileID: 1338669703}
   - component: {fileID: 1338669702}
+  - component: {fileID: 1338669705}
   m_Layer: 5
   m_Name: Image (4)
   m_TagString: Untagged
@@ -4064,6 +4104,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338669700}
   m_CullTransparentMesh: 1
+--- !u!114 &1338669705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338669700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4440b7df1e814e0bbe03280abd273718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WST.Scripts.Item.ItemUI.ItemSlotUI
 --- !u!1001 &1344490108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6084,6 +6136,7 @@ GameObject:
   - component: {fileID: 1812468417}
   - component: {fileID: 1812468416}
   - component: {fileID: 1812468415}
+  - component: {fileID: 1812468418}
   m_Layer: 5
   m_Name: Image (1)
   m_TagString: Untagged
@@ -6169,6 +6222,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812468413}
   m_CullTransparentMesh: 1
+--- !u!114 &1812468418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812468413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4440b7df1e814e0bbe03280abd273718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WST.Scripts.Item.ItemUI.ItemSlotUI
 --- !u!1001 &1912425242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6596,6 +6661,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbc9934c6f9940a6acc2b7c93c308465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WST.Scripts.Item.ItemUI.ItemContainer
+  itemSlots:
+  - {fileID: 1268504190}
+  - {fileID: 1812468418}
+  - {fileID: 201320059}
+  - {fileID: 904074245}
+  - {fileID: 1338669705}
 --- !u!1001 &2104087421
 PrefabInstance:
   m_ObjectHideFlags: 0

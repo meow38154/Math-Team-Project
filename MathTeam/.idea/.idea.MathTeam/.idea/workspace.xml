@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08089370-b837-4e5e-bc54-06d477b48b62" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemUI/ItemCanvas.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemUI/ItemCanvas.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/EventBus.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/EventBus/Bus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/EventBus/Bus.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/EventBus/IEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/EventBus/IEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/Events.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/Events/ItemAddEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/Events/ItemAddEvent.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MathTeam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MathTeam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WST/BaldiItemSlot-Photoroom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WST/BaldiItemSlot-Photoroom.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WST/Scripts/Item/AbstractItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/AbstractItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemSo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemUI/ItemContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemUI/ItemContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemUI/ItemSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemSo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemUI/ItemSo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemSo.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/WST/WSTScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WST/WSTScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +27,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/WST/EventBus/Bus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/WST/EventBus/IEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/WST/Events/ItemAddEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemUI/ItemCanvas.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -100,6 +105,7 @@
       <workItem from="1781592841881" duration="987000" />
       <workItem from="1781835360535" duration="91000" />
       <workItem from="1782903675134" duration="4207000" />
+      <workItem from="1782999840892" duration="4104000" />
     </task>
     <servers />
   </component>

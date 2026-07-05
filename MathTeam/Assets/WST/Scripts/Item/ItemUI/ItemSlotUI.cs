@@ -1,21 +1,31 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using WST.Scripts.Item.ItemSOs;
 
 namespace WST.Scripts.Item.ItemUI
 {
     public class ItemSlotUI : MonoBehaviour
     {
         private Image _image;
-
+        public AbstractItemSo ItemSo {get; private set;}
         public void Init()
         {
             _image = GetComponent<Image>();
-            Show(null);
+            AddItem();
         }
 
-        public void Show(Sprite sprite)
+        public void AddItem(AbstractItemSo item = null)
         {
-            _image.sprite = sprite;
+            if (item == null)
+            {
+                _image.sprite = null;
+                ItemSo = item;
+            }
+            else
+            {
+                _image.sprite = ItemSo.ItemSprite;
+                ItemSo = item;
+            }
         }
     }
 }

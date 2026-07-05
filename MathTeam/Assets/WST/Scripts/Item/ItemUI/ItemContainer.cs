@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using WST.Scripts.Item.ItemSOs;
 
 namespace WST.Scripts.Item.ItemUI
 {
@@ -13,12 +14,7 @@ namespace WST.Scripts.Item.ItemUI
         
         public ItemSlotUI NowItemSlot => itemSlots[_nowIdx];
 
-        private void Awake()
-        {
-            Init();
-        }
-
-        private void Init()
+        public void Init()
         {
             foreach (ItemSlotUI slot in itemSlots)
             {
@@ -26,9 +22,26 @@ namespace WST.Scripts.Item.ItemUI
             }
         }
 
-        public void AddItem()
+        public bool AddItem(AbstractItemSo itemSo)
         {
-            
+            foreach (ItemSlotUI slot in itemSlots)
+            {
+                if (slot.ItemSo == null)
+                {
+                    slot.AddItem(itemSo);
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public void UseItem()
+        {
+            if (NowItemSlot.ItemSo != null)
+            {
+                NowItemSlot.ItemSo.RaiseEvent(); 
+                NowItemSlot.AddItem(null);
+            }
         }
 
         public void Left() => _nowIdx = Math.Max(0, _nowIdx);

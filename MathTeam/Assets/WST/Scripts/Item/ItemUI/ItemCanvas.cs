@@ -24,7 +24,7 @@ namespace WST.Scripts.Item.ItemUI
         {
             if (itemContainer.AddItem(obj.Item.AbstractItemSo))
             {
-                Destroy(obj.Item);
+                Destroy(obj.Item.gameObject);
             }
         }
     }

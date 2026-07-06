@@ -12,14 +12,14 @@ namespace WST.Scripts.Item.ItemUI
 
         private int _nowIdx = 0;
 
-        private Dictionary<int, AbstractItemSo> itemDict = new();
+        private readonly Dictionary<int, AbstractItemSo> _itemDict = new();
 
         public void Init()
         {
             for (int i = 0; i < itemSlots.Count; i++)
             {
                 itemSlots[i].Init();
-                itemDict.Add(i, null);
+                _itemDict.Add(i, null);
             }
 
             SelectItem();
@@ -29,9 +29,9 @@ namespace WST.Scripts.Item.ItemUI
         {
             for (int i = 0; i < itemSlots.Count; i++)
             {
-                if (itemDict[i] == null)
+                if (_itemDict[i] == null)
                 {
-                    itemDict[i] = itemSo;
+                    _itemDict[i] = itemSo;
                     itemSlots[i].AddItem(itemSo.ItemSprite);
                     return true;
                 }
@@ -42,14 +42,14 @@ namespace WST.Scripts.Item.ItemUI
 
         public void UseItem()
         {
-            itemDict[_nowIdx].RaiseEvent();
-            itemDict[_nowIdx] = null;
+            _itemDict[_nowIdx].RaiseEvent();
+            _itemDict[_nowIdx] = null;
             itemSlots[_nowIdx].AddItem(null);
         }
 
         public bool CanUseItem()
         {
-            return itemDict[_nowIdx] != null;
+            return _itemDict[_nowIdx] != null;
         }
 
         private void SelectItem()

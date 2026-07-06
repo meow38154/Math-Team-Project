@@ -8,29 +8,27 @@ namespace WST.Scripts.Item.ItemUI
     {
         [SerializeField] private Image background;
         [SerializeField] private Image itemImage;
-        
+
         private Image _image;
-        public AbstractItemSo ItemSo {get; private set;}
+
         public void Init()
         {
             _image = GetComponent<Image>();
-            AddItem();
+            AddItem(null);
         }
 
-        public void AddItem(AbstractItemSo item = null)
+        public void AddItem(Sprite item)
         {
             if (item == null)
             {
                 itemImage.gameObject.SetActive(false);
                 background.color = new Color(255, 255, 255, 0);
-                ItemSo = item;
             }
             else
             {
                 itemImage.gameObject.SetActive(true);
-                itemImage.sprite = ItemSo.ItemSprite;
+                itemImage.sprite = item;
                 background.color = new Color(255, 255, 255, 255);
-                ItemSo = item;
             }
         }
 

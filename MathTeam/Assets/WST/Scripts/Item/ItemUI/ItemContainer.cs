@@ -11,38 +11,44 @@ namespace WST.Scripts.Item.ItemUI
         [SerializeField] private List<ItemSlotUI> itemSlots;
 
         private int _nowIdx = 0;
-        
-        public ItemSlotUI NowItemSlot => itemSlots[_nowIdx];
+
+        private Dictionary<int, AbstractItemSo> itemDict = new();
 
         public void Init()
         {
-            foreach (ItemSlotUI slot in itemSlots)
+            for (int i = 0; i < itemSlots.Count; i++)
             {
-                slot.Init();
+                itemSlots[i].Init();
+                itemDict.Add(i, null);
             }
+
             SelectItem();
         }
 
         public bool AddItem(AbstractItemSo itemSo)
         {
-            foreach (ItemSlotUI slot in itemSlots)
+            for (int i = 0; i < itemSlots.Count; i++)
             {
-                if (slot.ItemSo == null)
+                if (itemDict[i] == null)
                 {
-                    slot.AddItem(itemSo);
+                    itemDict[i] = itemSo;
+                    itemSlots[i].AddItem(itemSo.ItemSprite);
                     return true;
                 }
             }
+
             return false;
         }
 
         public void UseItem()
         {
-            if (NowItemSlot.ItemSo != null)
-            {
-                NowItemSlot.ItemSo.RaiseEvent(); 
-                NowItemSlot.AddItem(null);
-            }
+            itemDict[_nowIdx].RaiseEvent();
+            itemSlots[_nowIdx].AddItem(null);
+        }
+
+        public bool CanUseItem()
+        {
+            return itemDict[_nowIdx] != null;
         }
 
         private void SelectItem()
@@ -51,7 +57,7 @@ namespace WST.Scripts.Item.ItemUI
             {
                 slot.Select(false);
             }
-            NowItemSlot.Select(true);
+            itemSlots[_nowIdx].Select(true);
         }
 
         public void LeftMove()

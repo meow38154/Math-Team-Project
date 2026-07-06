@@ -35,7 +35,8 @@ namespace WST.Scripts.Item.ItemUI
 
             if (Mouse.current.rightButton.wasPressedThisFrame)
             {
-                itemContainer.UseItem();
+                if (itemContainer.CanUseItem())
+                    itemContainer.UseItem();
             }
         }
 

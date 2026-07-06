@@ -56,13 +56,13 @@ namespace WST.Scripts.Item.ItemUI
 
         public void LeftMove()
         {
-            _nowIdx = Math.Max(0, _nowIdx);
+            _nowIdx = Math.Max(0, _nowIdx - 1);
             SelectItem();
         }
 
         public void RightMove()
         {
-            _nowIdx = Math.Min(itemSlots.Count - 1, _nowIdx);
+            _nowIdx = Math.Min(itemSlots.Count - 1, _nowIdx + 1);
             SelectItem();
         }
     }

@@ -23,17 +23,17 @@ namespace WST.Scripts.Item.ItemUI
 
         private void Update()
         {
-            if (Keyboard.current.iKey.wasPressedThisFrame)
+            if (Keyboard.current.qKey.wasPressedThisFrame)
             {
                 itemContainer.LeftMove();
             }
 
-            if (Keyboard.current.oKey.wasPressedThisFrame)
+            if (Keyboard.current.eKey.wasPressedThisFrame)
             {
                 itemContainer.RightMove();
             }
 
-            if (Keyboard.current.enterKey.wasPressedThisFrame)
+            if (Mouse.current.rightButton.wasPressedThisFrame)
             {
                 itemContainer.UseItem();
             }

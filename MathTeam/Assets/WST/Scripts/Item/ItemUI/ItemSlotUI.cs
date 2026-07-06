@@ -21,13 +21,14 @@ namespace WST.Scripts.Item.ItemUI
         {
             if (item == null)
             {
-                _image.sprite = null;
-                background.color = new Color(255, 255, 255, 10);
+                itemImage.gameObject.SetActive(false);
+                background.color = new Color(255, 255, 255, 0);
                 ItemSo = item;
             }
             else
             {
-                _image.sprite = ItemSo.ItemSprite;
+                itemImage.gameObject.SetActive(true);
+                itemImage.sprite = ItemSo.ItemSprite;
                 background.color = new Color(255, 255, 255, 255);
                 ItemSo = item;
             }

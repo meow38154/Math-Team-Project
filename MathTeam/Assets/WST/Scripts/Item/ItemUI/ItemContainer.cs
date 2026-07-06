@@ -43,6 +43,7 @@ namespace WST.Scripts.Item.ItemUI
         public void UseItem()
         {
             itemDict[_nowIdx].RaiseEvent();
+            itemDict[_nowIdx] = null;
             itemSlots[_nowIdx].AddItem(null);
         }
 

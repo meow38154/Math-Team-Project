@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08089370-b837-4e5e-bc54-06d477b48b62" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MathTeam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MathTeam/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemUI/ItemCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemUI/ItemCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemUI/ItemContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemUI/ItemContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WST/WSTScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WST/WSTScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +98,8 @@
       <workItem from="1781835360535" duration="91000" />
       <workItem from="1782903675134" duration="4207000" />
       <workItem from="1782999840892" duration="4104000" />
-      <workItem from="1783257249234" duration="2960000" />
+      <workItem from="1783257249234" duration="5781000" />
+      <workItem from="1783334112042" duration="2217000" />
     </task>
     <servers />
   </component>

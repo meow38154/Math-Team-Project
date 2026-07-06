@@ -44,7 +44,7 @@ namespace WST.Scripts.Item.ItemUI
             }
         }
 
-        public void Left() => _nowIdx = Math.Max(0, _nowIdx);
-        public void Right() => _nowIdx = Math.Min(itemSlots.Count - 1, _nowIdx);
+        public void LeftMove() => _nowIdx = Math.Max(0, _nowIdx);
+        public void RightMove() => _nowIdx = Math.Min(itemSlots.Count - 1, _nowIdx);
     }
 }

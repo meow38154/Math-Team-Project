@@ -4461,6 +4461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b302d4a8eac342a789f0ce18f5b5d791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WST.Scripts.Item.ItemUI.ItemCanvas
+  itemContainer: {fileID: 2100633411}
 --- !u!1001 &1418079180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6593,7 +6594,7 @@ GameObject:
   - component: {fileID: 2100633410}
   - component: {fileID: 2100633411}
   m_Layer: 5
-  m_Name: Items
+  m_Name: ItemContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -20,6 +20,7 @@ namespace WST.Scripts.Item.ItemUI
             {
                 slot.Init();
             }
+            SelectItem();
         }
 
         public bool AddItem(AbstractItemSo itemSo)
@@ -44,7 +45,25 @@ namespace WST.Scripts.Item.ItemUI
             }
         }
 
-        public void LeftMove() => _nowIdx = Math.Max(0, _nowIdx);
-        public void RightMove() => _nowIdx = Math.Min(itemSlots.Count - 1, _nowIdx);
+        private void SelectItem()
+        {
+            foreach (ItemSlotUI slot in itemSlots)
+            {
+                slot.Select(false);
+            }
+            NowItemSlot.Select(true);
+        }
+
+        public void LeftMove()
+        {
+            _nowIdx = Math.Max(0, _nowIdx);
+            SelectItem();
+        }
+
+        public void RightMove()
+        {
+            _nowIdx = Math.Min(itemSlots.Count - 1, _nowIdx);
+            SelectItem();
+        }
     }
 }

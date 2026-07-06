@@ -6,6 +6,9 @@ namespace WST.Scripts.Item.ItemUI
 {
     public class ItemSlotUI : MonoBehaviour
     {
+        [SerializeField] private Image background;
+        [SerializeField] private Image itemImage;
+        
         private Image _image;
         public AbstractItemSo ItemSo {get; private set;}
         public void Init()
@@ -19,13 +22,20 @@ namespace WST.Scripts.Item.ItemUI
             if (item == null)
             {
                 _image.sprite = null;
+                background.color = new Color(255, 255, 255, 10);
                 ItemSo = item;
             }
             else
             {
                 _image.sprite = ItemSo.ItemSprite;
+                background.color = new Color(255, 255, 255, 255);
                 ItemSo = item;
             }
+        }
+
+        public void Select(bool canSelect)
+        {
+            background.color = canSelect ? Color.red : Color.white;
         }
     }
 }

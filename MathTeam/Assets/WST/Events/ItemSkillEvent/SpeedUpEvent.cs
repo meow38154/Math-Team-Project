@@ -1,15 +1,14 @@
-﻿using UnityEngine;
-using WST.EventBus;
+﻿using WST.EventBus;
 
 namespace WST.Events.ItemSkillEvent
 {
     public struct SpeedUpEvent : IEvent
     {
-        public float DecelerationAmount;
+        public float Acceleration;
 
-        public SpeedUpEvent(float decelerationAmount)
+        public SpeedUpEvent(float acceleration)
         {
-            DecelerationAmount = decelerationAmount;
+            Acceleration = acceleration;
         }
     }
 }

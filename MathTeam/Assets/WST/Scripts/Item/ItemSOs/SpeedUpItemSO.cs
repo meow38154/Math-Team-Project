@@ -9,7 +9,7 @@ namespace WST.Scripts.Item.ItemSOs
     {
         public override void RaiseEvent()
         {
-            Bus<SpeedUpEvent>.Raise(new SpeedUpEvent());
+            Bus<SpeedUpEvent>.Raise(new SpeedUpEvent(3));
         }
 
         public override bool CanUseItem()

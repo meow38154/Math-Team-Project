@@ -15,7 +15,7 @@ namespace WST.Scripts.Item
             SpawnItem();
         }
 
-        public void SpawnItem()
+        private void SpawnItem()
         {
             foreach (Transform trans in spawnPoint)
             {

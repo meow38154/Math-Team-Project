@@ -1,26 +1,76 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using WST.Scripts.Item.ItemSOs;
 
 namespace WST.Scripts.Item.ItemUI
 {
     public class ItemContainer : MonoBehaviour
     {
-        private List<ItemSlotUI> _itemSlots;
+        [SerializeField] private List<ItemSlotUI> itemSlots;
 
+        private int _nowIdx = 0;
 
-        private void Awake()
+        private readonly Dictionary<int, AbstractItemSo> _itemDict = new();
+
+        public void Init()
         {
-            Init();
+            for (int i = 0; i < itemSlots.Count; i++)
+            {
+                itemSlots[i].Init();
+                _itemDict.Add(i, null);
+            }
+
+            SelectItem();
         }
 
-        private void Init()
+        public bool AddItem(AbstractItemSo itemSo)
         {
-            _itemSlots = GetComponentsInChildren<ItemSlotUI>().ToList();
-            foreach (ItemSlotUI slot in _itemSlots)
+            for (int i = 0; i < itemSlots.Count; i++)
             {
-                slot.Init();
+                if (_itemDict[i] == null)
+                {
+                    _itemDict[i] = itemSo;
+                    itemSlots[i].AddItem(itemSo.ItemSprite);
+                    return true;
+                }
             }
+
+            return false;
+        }
+
+        public void UseItem()
+        {
+            _itemDict[_nowIdx].RaiseEvent();
+            _itemDict[_nowIdx] = null;
+            itemSlots[_nowIdx].AddItem(null);
+        }
+
+        public bool CanUseItem()
+        {
+            return _itemDict[_nowIdx] != null;
+        }
+
+        private void SelectItem()
+        {
+            foreach (ItemSlotUI slot in itemSlots)
+            {
+                slot.Select(false);
+            }
+            itemSlots[_nowIdx].Select(true);
+        }
+
+        public void LeftMove()
+        {
+            _nowIdx = Math.Max(0, _nowIdx - 1);
+            SelectItem();
+        }
+
+        public void RightMove()
+        {
+            _nowIdx = Math.Min(itemSlots.Count - 1, _nowIdx + 1);
+            SelectItem();
         }
     }
 }

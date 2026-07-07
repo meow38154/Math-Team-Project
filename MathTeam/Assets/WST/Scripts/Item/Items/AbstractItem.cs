@@ -11,7 +11,6 @@ namespace WST.Scripts.Item.Items
         [field: SerializeField] public AbstractItemSo AbstractItemSo { get; private set; }
         public void PickUp()
         {
-            Debug.Log("ee");
             Bus<ItemAddEvent>.Raise(new ItemAddEvent(this));
         }
     }

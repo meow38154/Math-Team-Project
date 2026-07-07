@@ -11,5 +11,10 @@ namespace WST.Scripts.Item.ItemSOs
         {
             Bus<SpeedUpEvent>.Raise(new SpeedUpEvent());
         }
+
+        public override bool CanUseItem()
+        {
+            return true;
+        }
     }
 }

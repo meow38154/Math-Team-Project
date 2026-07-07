@@ -49,7 +49,7 @@ namespace WST.Scripts.Item.ItemUI
 
         public bool CanUseItem()
         {
-            return _itemDict[_nowIdx] != null;
+            return _itemDict[_nowIdx] != null && _itemDict[_nowIdx].CanUseItem();
         }
 
         private void SelectItem()

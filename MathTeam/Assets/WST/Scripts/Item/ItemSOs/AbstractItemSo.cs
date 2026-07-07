@@ -6,5 +6,6 @@ namespace WST.Scripts.Item.ItemSOs
     {
         [field: SerializeField] public Sprite ItemSprite { get; private set; }
         public abstract void RaiseEvent();
+        public abstract bool CanUseItem();
     }
 }

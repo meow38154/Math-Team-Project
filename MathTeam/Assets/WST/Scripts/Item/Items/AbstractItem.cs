@@ -1,18 +1,17 @@
-﻿using System;
-using Player;
+﻿using Player;
 using UnityEngine;
 using WST.EventBus;
 using WST.Events;
 using WST.Scripts.Item.ItemSOs;
-using WST.Scripts.Item.ItemUI;
 
-namespace WST.Scripts.Item
+namespace WST.Scripts.Item.Items
 {
-    public abstract class AbstractItem : AbstractPlayerRay
+    public abstract class AbstractItem : MonoBehaviour, IPickUpable
     {
         [field: SerializeField] public AbstractItemSo AbstractItemSo { get; private set; }
-        protected override void RayInteraction(Transform target)
+        public void PickUp()
         {
+            Debug.Log("ee");
             Bus<ItemAddEvent>.Raise(new ItemAddEvent(this));
         }
     }

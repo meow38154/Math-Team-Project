@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08089370-b837-4e5e-bc54-06d477b48b62" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemUI/ItemContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemUI/ItemContainer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/Events/ItemSkillEvent/SpeedUpEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/Events/ItemSkillEvent/SpeedUpEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/IPickUpable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/IPickUpable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemSOs/SpeedUpItemSO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemSOs/SpeedUpItemSO.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/Items.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/Items/BaseItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/Items/BaseItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/PickUpItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/PickUpItem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MathTeam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MathTeam/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WST/Events/ItemAddEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WST/Events/ItemAddEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WST/Scripts/Item/AbstractItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/Items/AbstractItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WST/Scripts/Item/AbstractItem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/Items/AbstractItem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemSOs/AbstractItemSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemSOs/AbstractItemSo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/WST/WSTScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WST/WSTScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +35,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/WST/EventBus/Bus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WST/EventBus/IEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WST/Events/ItemAddEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/WST/Events/ItemSkillEvent/SpeedUpEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/WST/Scripts/Item/IPickUpable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemSOs/SpeedUpItemSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WST/Scripts/Item/ItemUI/ItemCanvas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/WST/Scripts/Item/PickUpItem.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -96,7 +116,8 @@
       <workItem from="1782903675134" duration="4207000" />
       <workItem from="1782999840892" duration="4104000" />
       <workItem from="1783257249234" duration="5781000" />
-      <workItem from="1783334112042" duration="10334000" />
+      <workItem from="1783334112042" duration="12097000" />
+      <workItem from="1783407506905" duration="1206000" />
     </task>
     <servers />
   </component>

@@ -35,9 +35,9 @@ namespace GDH
         {
             float value = CurrentState.Value switch
             {
-                TrigonometricFunction.SIN => Mathf.Sin(_elapsedTime),
-                TrigonometricFunction.COS => Mathf.Cos(_elapsedTime),
-                TrigonometricFunction.TAN => Mathf.Tan(_elapsedTime),
+                TrigonometricFunction.SIN => Mathf.Sin(Mathf.Deg2Rad * _elapsedTime),
+                TrigonometricFunction.COS => Mathf.Cos(Mathf.Deg2Rad * _elapsedTime),
+                TrigonometricFunction.TAN => Mathf.Tan(Mathf.Deg2Rad * _elapsedTime),
                 _ => 1
             };
             return value;
@@ -48,7 +48,6 @@ namespace GDH
             {
                 yield return new WaitForSeconds(0.3f);
                 _elapsedTime++;
-                Debug.Log("TimeElapse");
             }
             OnElapsedTimeFull();
         }

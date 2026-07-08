@@ -16,7 +16,7 @@ namespace GDH
         {
             base.Awake();
             CurrentState.OnValueChanged += OnMovementMethodChange;
-            CurrentState.Value = TrigonometricFunction.SIN;
+            CurrentState.Value = TrigonometricFunction.TAN;
             StartCoroutine(ElapsedTimeModifyCoroutine());
         }
         public void OnMovementMethodChange(TrigonometricFunction prev, TrigonometricFunction next)
@@ -37,16 +37,16 @@ namespace GDH
             {
                 TrigonometricFunction.SIN => Mathf.Sin(Mathf.Deg2Rad * _elapsedTime),
                 TrigonometricFunction.COS => Mathf.Cos(Mathf.Deg2Rad * _elapsedTime),
-                TrigonometricFunction.TAN => Mathf.Tan(Mathf.Deg2Rad * _elapsedTime),
+                TrigonometricFunction.TAN => Mathf.Tan(Mathf.Deg2Rad * _elapsedTime * 0.2f),
                 _ => 1
             };
             return value;
         }
         private IEnumerator ElapsedTimeModifyCoroutine()
         {
-            while(_elapsedTime <= 90)
+            while(_elapsedTime <= 360)
             {
-                yield return new WaitForSeconds(0.3f);
+                yield return new WaitForSeconds(0.075f);
                 _elapsedTime++;
             }
             OnElapsedTimeFull();

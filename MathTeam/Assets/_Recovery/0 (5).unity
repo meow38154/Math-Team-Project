@@ -3538,7 +3538,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1079331033}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 1.5
+  m_Radius: 1.4
   m_Speed: 3.5
   m_Acceleration: 360
   avoidancePriority: 50
@@ -5297,8 +5297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GDH.TriMovementModule
   points: {fileID: 1000709426}
-  defaultSpeed: 7.5
-  trackTarget: {fileID: 943806174}
+  defaultSpeed: 5
 --- !u!114 &1677792455
 MonoBehaviour:
   m_ObjectHideFlags: 0

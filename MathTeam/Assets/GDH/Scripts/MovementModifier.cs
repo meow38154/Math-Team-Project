@@ -35,20 +35,19 @@ namespace GDH
         {
             float value = CurrentState.Value switch
             {
-                TrigonometricFunction.SIN => Mathf.Sin(_elapsedTime),
-                TrigonometricFunction.COS => Mathf.Cos(_elapsedTime),
-                TrigonometricFunction.TAN => Mathf.Tan(_elapsedTime),
+                TrigonometricFunction.SIN => Mathf.Sin(Mathf.Deg2Rad * _elapsedTime),
+                TrigonometricFunction.COS => Mathf.Cos(Mathf.Deg2Rad * _elapsedTime),
+                TrigonometricFunction.TAN => Mathf.Tan(Mathf.Deg2Rad * _elapsedTime * 0.2f),
                 _ => 1
             };
             return value;
         }
         private IEnumerator ElapsedTimeModifyCoroutine()
         {
-            while(_elapsedTime <= 90)
+            while(_elapsedTime <= 360)
             {
-                yield return new WaitForSeconds(0.3f);
-                _elapsedTime++;
-                Debug.Log("TimeElapse");
+                yield return new WaitForSeconds(0.5f);
+                _elapsedTime += 15;
             }
             OnElapsedTimeFull();
         }

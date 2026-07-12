@@ -22,6 +22,26 @@ namespace Player
         private float _yaw;
         private float _pitch;
 
+        private bool _noControl;
+        private Quaternion _saveRotation;
+
+        public bool NoControl
+        {
+            get => _noControl;
+            set
+            {
+                if (_noControl == value)
+                    return;
+
+                _noControl = value;
+
+                if (_noControl)
+                {
+                    _saveRotation = transform.rotation;
+                }
+            }
+        }
+
         private void Awake()
         {
             _rb = GetComponent<Rigidbody>();
@@ -39,12 +59,19 @@ namespace Player
         }
 
         private void Update()
-        {
+        {            
+            if (NoControl)
+            {
+                transform.rotation = _saveRotation;
+                _rb.linearVelocity = Vector3.zero;
+                return;
+            }
             RotateView();
         }
 
         private void FixedUpdate()
         {
+            if (NoControl) return;
             Move();
             RotateBody();
         }

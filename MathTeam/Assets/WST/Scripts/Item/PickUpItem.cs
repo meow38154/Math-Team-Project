@@ -29,7 +29,7 @@ namespace WST.Scripts.Item
 
         private void OnDrawGizmos()
         {
-            Gizmos.color = Color.red;
+            Gizmos.color = Color.green;
             Gizmos.DrawRay(transform.position, transform.forward * rayDistance);
         }
     }

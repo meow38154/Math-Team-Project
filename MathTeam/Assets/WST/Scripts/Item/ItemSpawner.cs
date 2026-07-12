@@ -7,7 +7,7 @@ namespace WST.Scripts.Item
 {
     public class ItemSpawner : MonoBehaviour
     {
-        [SerializeField] private AbstractItem[] items;
+        [SerializeField] private AbstractInteraction[] items;
         [SerializeField] private Transform[] spawnPoint;
 
         private void Awake()

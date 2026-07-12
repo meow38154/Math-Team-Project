@@ -6,11 +6,11 @@ namespace WST.Events
 {
     public struct ItemAddEvent : IEvent
     {
-        public AbstractItem Item;
+        public BaseItem Interaction;
         
-        public ItemAddEvent(AbstractItem item)
+        public ItemAddEvent(BaseItem interaction)
         {
-            Item = item;
+            Interaction = interaction;
         }
     }
 }

@@ -42,9 +42,9 @@ namespace WST.Scripts.Item.ItemUI
 
         private void HandleItemAdd(ItemAddEvent obj)
         {
-            if (itemContainer.AddItem(obj.Item.AbstractItemSo))
+            if (itemContainer.AddItem(obj.Interaction.AbstractItemSo))
             {
-                Destroy(obj.Item.gameObject);
+                Destroy(obj.Interaction.gameObject);
             }
         }
     }

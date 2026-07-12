@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5482870452019904189}
   - component: {fileID: 5317155859432685192}
   - component: {fileID: 6679313385580013919}
-  - component: {fileID: 2376671177201545278}
+  - component: {fileID: 8583589366861588617}
   m_Layer: 9
   m_Name: Item
   m_TagString: Untagged
@@ -141,7 +141,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2376671177201545278
+--- !u!114 &8583589366861588617
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4074896840411237077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca8b05070f3744c7b8f13166937ac9fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 9bee02181f5a4defb404afbec512b61c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WST.Scripts.Item.Items.SpeedUpItem
+  m_EditorClassIdentifier: Assembly-CSharp::WST.Scripts.Item.Items.BaseItem
   <AbstractItemSo>k__BackingField: {fileID: 11400000, guid: 2e88a044e010740448ce55efdf1f9a85, type: 2}

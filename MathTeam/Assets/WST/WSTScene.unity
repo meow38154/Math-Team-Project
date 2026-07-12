@@ -1381,7 +1381,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.48000002
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 09ff103aeb6584449879b811ffc29c9b, type: 2}
   m_BuildHeightMesh: 0
@@ -2922,10 +2922,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76324c0514a343b494a47817fadc40c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player.PlayerRaySensor
-  rayMask:
-    serializedVersion: 2
-    m_Bits: 256
   rayDistance: 5
+  interactionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1202098666
 GameObject:
   m_ObjectHideFlags: 0
@@ -6037,6 +6040,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6610302850926590979, guid: d837b7a8524871b4ab27928ae5dc1048, type: 3}
+      propertyPath: 'items.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8583589366861588617, guid: 5992a11b83aa4764eb94a9471378fa7e, type: 3}
     - target: {fileID: 7738802244989299993, guid: d837b7a8524871b4ab27928ae5dc1048, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
